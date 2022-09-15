@@ -1,8 +1,12 @@
 import Button from 'react-bootstrap/Button';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const ItemCount  = ({handleClick}) => {
-const [valor, setValor] = useState(0);
+const [valor, setValor] = useState(0); //hook
+
+useEffect(() => {
+console.log('Si llega a un tope tendra 10% descuento.')
+}, [valor]); //se actualiza cuando cambia el estado valor.
 
 const handleAumentar = () => {
     setValor (valor + 1);
