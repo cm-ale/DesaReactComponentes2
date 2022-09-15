@@ -1,4 +1,4 @@
-import ItemCount from "./ItemCount";
+import ItemCount from "../Components/ItemCount";
 
 const handleClick = () => {
     alert ("Se añadio Producto al carrito con éxito.")
